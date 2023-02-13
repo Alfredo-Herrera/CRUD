@@ -1,10 +1,22 @@
 import MainLayout from '@/layouts/MainLayout/MainLayout';
+import SeccionLogin from '@/organisms/SeccionLogin';
+import Grid from '@mui/material/Grid';
 import { ReactElement } from 'react';
 
 const HomePage = () => {
   return (
     <>
-      <h1>hola mundo</h1>
+      <Grid
+        item
+        md={12}
+        sx={{
+          display: 'grid',
+          placeItems: 'center',
+          marginBottom: '30px',
+        }}
+      >
+        <SeccionLogin />
+      </Grid>
     </>
   );
 };
